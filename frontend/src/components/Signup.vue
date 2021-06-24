@@ -12,7 +12,7 @@
                 label="pseudo"
                 v-model="pseudo"
                 type="text"
-                :rules="[(v) => !!v || 'Pseudo is required']"
+                :rules="[(v) => !!v || 'Pseudo est obligatoire']"
                 required
                 class="input-group--focused"
               ></v-text-field>
@@ -29,7 +29,7 @@
                 label="mot de passe"
                 v-model="password"
                 type="password"
-                :rules="[(v) => !!v || 'Password is required']"
+                :rules="[(v) => !!v || 'Mot de passe est obligatoire']"
                 required
                 class="input-group--focused"
               ></v-text-field>

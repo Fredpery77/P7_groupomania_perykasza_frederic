@@ -12,7 +12,7 @@
                 label="email"
                 v-model="email"
                 type="email"
-                :rules="[(v) => !!v || 'Email is required']"
+                :rules="[(v) => !!v || 'Email est obligatoire']"
                 required
                 class="input-group--focused"
               >
@@ -21,7 +21,7 @@
                 label="mot de passe"
                 v-model="password"
                 type="password"
-                :rules="[(v) => !!v || 'Password is required']"
+                :rules="[(v) => !!v || 'Mot de passe est obligatoire']"
                 required
                 class="input-group--focused"
               >
