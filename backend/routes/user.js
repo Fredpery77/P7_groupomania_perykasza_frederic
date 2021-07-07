@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const userCtrl = require("../controllers/user.");
+const userCtrl = require("../controllers/user");
 const authUser = require("../middleware/authUser");
 const auth = require("../middleware/auth");
 const multer = require("../middleware/multer-config");
