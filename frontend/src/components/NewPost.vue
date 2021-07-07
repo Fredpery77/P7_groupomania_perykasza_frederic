@@ -29,7 +29,6 @@
             name="input-1-3"
             label="Message"
             v-model="message"
-            :rules="[rules.required]"
             auto-grow
             class="input-group--focused"
           ></v-textarea>

@@ -1,19 +1,19 @@
 <template>
-  <div>
+  <div v-if="post.User">
     <v-card class="posts-card mx-auto mt-4 mb-4 pb-5" round elevation="2">
       <div>
         <div class="d-flex justify-space-between pr-2 ">
           <v-card-title class="post-title">
             <v-avatar class="profil-post" size="52px">
               <img
-                v-if="post.User.photo"
+                v-if="post.User && post.User.photo"
                 :src="post.User.photo"
                 alt="Photo de profil"
               />
               <v-icon
                 role="avatar personnalisé"
                 v-else-if="
-                  post.User.photo === null &&
+                  post.User && post.User.photo === null &&
                     post.User.id === $store.state.user.id
                 "
                 color="pink"
